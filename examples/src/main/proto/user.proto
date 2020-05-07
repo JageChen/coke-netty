@@ -1,0 +1,16 @@
+//proto3语法注解:如果您不这样做，protobuf编译器将假定您正在使用proto2,这必须是文件的第一个非空的非注释行。
+  syntax = "proto3";
+  //生成的包名
+  option java_package = "io.netty.examples.protobuf";
+  //生成的java名
+  option java_outer_classname = "UserMsg";
+  message User{
+      //ID
+      int32 id = 1;
+      //姓名
+      string name = 2;
+      //年龄
+      int32 age = 3;
+      //状态
+      int32 state = 4;
+  }
